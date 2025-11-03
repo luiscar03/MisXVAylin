@@ -1,0 +1,1179 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Invitación - Aylin Mis XV Años</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+  <style>
+    :root {
+      --azul-oscuro: #15304a;
+      --azul-claro: #5b88a5;
+      --blanco: #ffffff;
+      --fondo-bienvenida: #98adc0;
+        --numero-20-color: #2f557b;
+
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #e6eef6;
+      margin: 0;
+      text-align: center;
+    }
+/* PORTADA PRINCIPAL */
+.portada {
+  position: relative;
+  height: 100vh; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  overflow: hidden;
+}
+
+.hero {
+  flex: 1; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: var(--blanco);
+}
+
+
+/* ===== TEXTO DE LA PORTADA ===== */
+.hero-text {
+  position: absolute;
+  bottom: 150px; 
+  width: 100%;
+  text-align: center;
+  color: white;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.nombre {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 6rem !important;;
+  font-weight: normal;
+  margin: 0;
+    line-height: 1; 
+position: relative;
+  display: inline-block;
+  animation: textFadeIn 1.5s ease-in-out;
+}
+
+/* Estilo del texto "Mis XV Años" */
+.xv-text {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 8px; 
+  animation: textFadeIn 1.5s ease-in-out;
+  margin-top: -0.8rem;
+}
+
+.mis, .años {
+  font-family: 'Baskerville Old Face', serif;
+  font-size: 2.5rem;
+}
+
+.xv {
+  font-family: 'Calisto MT', serif;
+  font-size: 6rem;
+}
+
+@keyframes textFadeIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .hero-text {
+    bottom: 100px; 
+  }
+  .nombre {
+    font-size: 3.6rem;
+    margin-bottom: 0.3rem;
+  }
+  .xv {
+    font-size: 4.2rem;
+  }
+  .mis, .años {
+    font-size: 2.1rem;
+  }
+  .xv-text {
+    gap: 6px;
+  }
+}
+
+
+
+
+
+.audio-container {
+  background-color: #5380ac;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  text-align: center;
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.audio-btn {
+  background: transparent; 
+  color: white; 
+  border: 2px solid white;
+  border-radius: 50%; 
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.audio-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.audio-btn .icon {
+  font-size: 1.6rem;
+  line-height: 1;
+  pointer-events: none; 
+}
+
+@media (max-width: 768px) {
+  .audio-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+}
+
+
+   
+
+    .titulo-invitacion {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.8rem;
+  color: var(--azul-oscuro);
+  margin-bottom: 0.8rem;
+}
+
+.texto-invitacion {
+  font-family: 'Merriweather', serif;
+  font-size: 1.1rem;
+    color: black;
+  margin-bottom: 1.5rem;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.fecha-invitacion p {
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+.apartala-fecha {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.2rem;
+    color: black;
+
+}
+
+.dia-semana {
+  font-size: 32px;
+  margin-bottom: 0.15rem;
+    color: black;
+
+}
+
+.numero-dia {
+  font-size: 70px;
+  font-weight: 700;
+  color: #2f557b;
+  margin-bottom: 0.15rem;
+}
+
+.mes {
+  font-size: 40px;
+  font-weight: 600;
+    color: black;
+  margin-bottom: 0.15rem;
+}
+
+.hora {
+  font-size: 32px;
+  font-weight: 500;
+    color: black;
+
+}
+
+
+   section {
+    background-color: #173149;
+    color: white;
+    padding: 20px;
+  }
+
+ .sectioncontador {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.contador-fondo {
+  background-image: url('DariContador.JPG');
+  background-size: 140%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 500px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+.contador-titulo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 32px;
+  color: #e6eef6;
+  margin-bottom: 15px;
+}
+
+.contador-valores {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  color: #e6eef6;
+  font-weight: 500;
+}
+
+.cont-item {
+  min-width: 45px;
+}
+
+.cont-num {
+  font-size: 42px;
+  line-height: 1;
+  color: #e6eef6;
+}
+
+.cont-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #e6eef6;
+}
+
+.cont-sep {
+  font-size: 42px;
+  line-height: 1;
+  color: #e6eef6;
+}
+
+@media (max-width: 600px) {
+  .contador-fondo {
+    background-size: 160%;
+    height: 380px;
+  }
+}
+
+
+
+
+
+.galeria-seccion {
+  background-color: #98adc0; 
+  padding: 60px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria-seccion h2 {
+    font-family: 'Dancing Script', cursive;
+
+  color: #15304a; 
+  font-size: 3rem;
+}
+
+
+.galeria.collage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  gap: 8px;
+  width: 100%;
+  max-width: 900px;
+  grid-auto-flow: dense;
+}
+
+
+.galeria.collage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.galeria.collage img.h2 {
+  grid-column: span 2;
+}
+
+.galeria.collage img.v2 {
+  grid-row: span 2;
+}
+
+@media (max-width: 768px) {
+  .galeria.collage {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+  }
+
+  .galeria.collage img.h2 {
+    grid-column: span 2;
+  }
+}
+
+/* Lightbox */
+.lightbox {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 4px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+  .section-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  .info-box, .info-box p, .info-box strong, .info-box small {
+    font-family: 'Merriweather', serif;
+    color: white;
+  }
+
+  .info-box strong {
+    font-weight: bold;
+  }
+
+  .btn-map {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #ffffff33;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Merriweather', serif;
+  }
+  .btn-map:hover {
+    background-color: #ffffff55;
+  }
+
+  .color-square {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    vertical-align: middle;
+    border-radius: 3px;
+  }
+
+  small {
+    color: white;
+    margin-right: 15px;
+  }
+
+   /* PORTADA FINAL */
+.portada-final {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+/* Contenedor principal */
+.portada-final-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mensaje-final {
+  font-family: 'Merriweather', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.info-final {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+.nombre-final {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 6rem;
+  margin-bottom: .2rem;
+}
+
+.xv-text-final {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: .5rem;
+}
+
+.xv-text-final .mis, .xv-text-final .años {
+  font-family: 'Baskerville Old Face', serif;
+  font-size: 1.8rem;
+}
+
+.xv-text-final .xv {
+  font-family: 'Calisto MT', serif;
+  font-size: 3.6rem;
+}
+
+.fecha-final {
+  font-family: 'Merriweather', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mensaje-final { font-size: 1.4rem; }
+  .nombre-final { font-size: 3rem; }
+  .xv-text-final .xv { font-size: 2.8rem; }
+  .xv-text-final .mis, .xv-text-final .años { font-size: 1.3rem; }
+  .fecha-final { font-size: .95rem; }
+  .info-final { bottom: 25px; }
+}
+
+
+
+    /* ---------- PRELOADER ---------- */
+#preloader {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Montserrat', sans-serif;
+  color: #15304a;
+  transition: opacity 0.6s ease, visibility 0.6s;
+}
+
+.spinner {
+  border: 4px solid #e0e7ec;
+  border-top: 4px solid #15304a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+body.loading {
+  overflow: hidden;
+}
+
+
+
+
+
+
+.sugerencias-regalos {
+  background-color: #15304a; 
+  color: white; 
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.sugerencias-regalos h2 {
+  font-size: 3rem;
+font-family: 'Dancing Script', cursive;
+  margin-bottom: 10px;
+}
+
+.sugerencias-regalos h3 {
+  font-size: 1.5rem;
+      font-family: 'Merriweather', serif;
+
+  margin-bottom: 20px;
+  font-weight: normal; 
+}
+
+.sugerencias-regalos .imagen-sobre img {
+  width: 150px; 
+    font-family: 'Merriweather', serif;
+
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.sugerencias-regalos p {
+  font-size: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+
+
+
+/* --- ANIMACIONES GENERALES --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* --- PRELOADER --- */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  border: 4px solid #d9d9d9;
+  border-top: 4px solid #2f557b;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* --- OCULTAR PRELOADER --- */
+body.loaded #preloader {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.hero {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.texto-invitacion, .titulo-invitacion {
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+  </style>
+</head>
+<body>
+
+    <!-- PRELOADER -->
+<div id="preloader">
+  <div class="spinner"></div>
+  <p>Cargando invitación...</p>
+</div>
+
+
+<!-- PORTADA PRINCIPAL -->
+<section class="portada">
+  <!-- ENCABEZADO -->
+<header class="hero" style="background-image: url('FotoPortadaInvitacionDari.jpg');">
+  <div class="hero-text">
+    <h1 class="nombre">Aylin</h1>
+    <div class="xv-text">
+      <span class="mis">Mis</span>
+      <span class="xv">XV</span>
+      <span class="años">Años</span>
+    </div>
+  </div>
+</header>
+
+  <!-- AUDIO -->
+  <div class="audio-container">
+    <button id="audioToggle" class="audio-btn" aria-pressed="false">
+      <span class="icon" id="audioIcon">►</span> 
+      
+    </button>
+
+    <audio id="bgAudio" preload="auto">
+      <source src="LATIN MAFIA - pero me estoy acabando. (Visualizer).mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+  </div>
+</section>
+
+
+
+  <!-- SECCIÓN BIENVENIDA -->
+  <section class="bienvenida text-center py-4 px-3" style="background-color: var(--fondo-bienvenida);">
+  <h2 class="titulo-invitacion">-Te Invitamos-</h2>
+  <p class="texto-invitacion">
+Con el corazón lleno de ilusión, quiero agradecer a Dios por bendecirme con esta hermosa etapa de mi vida, a mis padres por su amor incondicional y apoyo en cada paso, y a ustedes, familia y amigos, por acompañarme en este día tan especial. Su presencia hará de mis XV años un recuerdo inolvidable.</p>
+
+</section>
+
+<!-- SECCIÓN: DEDICATORIA -->
+<section class="text-center py-4 px-3" style="background-color: #e6eef6; color: black;">
+  <p style="font-family: 'Merriweather', serif; font-size: 18px; margin-bottom: 20px;">
+    Con amor, me acompañan mis papás
+  </p>
+
+  <p style="font-family: 'Dancing Script', cursive; font-size: 40px; margin-bottom: 10px;">
+    Papás
+  </p>
+
+  <p style="font-family: 'Dancing Script', cursive; font-size: 30px; font-weight: bold; margin-bottom: 4px;">
+    Miriam Elia Morales Barbosa
+  </p>
+
+  <p style="font-family: 'Dancing Script', cursive; font-size: 30px; font-weight: bold;">
+    Luis Ángel Carrizales Gómez
+  </p>
+</section>
+
+<!-- SECCIÓN FECHA INVITACIÓN -->
+<section class="text-center py-4 px-3" style="background-color: var(--fondo-bienvenida);">
+  <div class="fecha-invitacion mt-2">
+    <p class="apartala-fecha">Aparta la Fecha:</p>
+    <p class="dia-semana">Sábado</p>
+    <p class="numero-dia">29</p>
+    <p class="mes">Noviembre</p>
+    <p class="hora">19:00 hrs</p>
+  </div>
+</section>
+
+  <!-- CONTADOR -->
+<section class="sectioncontador">
+  <div class="contador-fondo">
+    
+    <div class="contador-titulo">
+      ¡Prepárate! Faltan...
+    </div>
+
+    <div id="countdown" class="contador-valores">
+      <div class="cont-item">
+        <div id="days" class="cont-num">00</div>
+        <div class="cont-label">DÍAS</div>
+      </div>
+      <div class="cont-sep">:</div>
+      <div class="cont-item">
+        <div id="hours" class="cont-num">00</div>
+        <div class="cont-label">HORAS</div>
+      </div>
+      <div class="cont-sep">:</div>
+      <div class="cont-item">
+        <div id="minutes" class="cont-num">00</div>
+        <div class="cont-label">MINUTOS</div>
+      </div>
+      <div class="cont-sep">:</div>
+      <div class="cont-item">
+        <div id="seconds" class="cont-num">00</div>
+        <div class="cont-label">SEGUNDOS</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- GALERÍA -->
+<section class="galeria-seccion">
+  <h2>Algunos de mis mejores momentos</h2>
+
+  <div class="galeria collage">
+    <img class="h2" src="FotoFormal1.jpg" alt="">
+    <img class="v2" src="CASUAL5.jpg" alt="">
+    <img src="CASUAL3.jpg" alt="">
+    <img class="v2" src="FotoFormal2.JPG" alt="">
+    <img class="h2" src="CASUAL8.jpg" alt="">
+    <img src="CASUAL6.jpg" alt="">
+    <img class="v2" src="CASUAL1.jpg" alt="">
+    <img class="v2" src="CASUAL4.jpg" alt="">
+
+    
+
+  </div>
+</section>
+
+<!-- Lightbox (mismo código que ya tienes) -->
+<div id="lightbox" class="lightbox">
+  <span class="cerrar">&times;</span>
+  <img class="lightbox-img" id="img-ampliada">
+</div>
+
+
+
+
+  <!-- CEREMONIA -->
+<section>
+  <img src="LogoIglesia.gif" alt="Ceremonia" style="display: block; margin: 0 auto 10px; max-width: 100px; height: auto;">
+  <h3 class="section-title">Ceremonia Religiosa</h3>
+  <div class="info-box">
+    <strong>Parroquia Nuestra Señora de Guadalupe</strong>
+    <p >C. Libertad 109, Casco Urbano, 66200 San Pedro Garza García, N.L.</p>
+    <p >7:00 PM</p>
+    <a class="btn-map" href="https://maps.app.goo.gl/6vFkrZ9U45pJ57Z19" target="_blank">Ver Mapa</a>
+  </div>
+</section>
+
+<!-- SALÓN -->
+<section>
+ <img src="LogoIglesia (2).gif" alt="Ceremonia" style="display: block; margin: 0 auto 10px; max-width: 100px; height: auto;">
+  <h3 class="section-title">Recepción</h3>
+  <div class="info-box">
+    <strong>Salón Ribera</strong>
+    <p >Av. Ignacio Morones Prieto 2801, Loma Larga, 64710 Monterrey, N.L.</p>
+    <p >8:00 PM</p>
+    <a class="btn-map" href="https://maps.app.goo.gl/iYeWYEFHcz8caWxR7" target="_blank">Ver Mapa</a>
+  </div>
+</section>
+
+<!-- CÓDIGO DE VESTIMENTA -->
+<section> 
+   <img src="LogoIglesia (1).gif" alt="Ceremonia" style="display: block; margin: 0 auto 10px; max-width: 100px; height: auto;">
+  <h3 class="section-title">Código de Vestimenta</h3>
+  <div class="info-box">
+    <strong>Formal</strong>
+    <p>Se reservan los siguientes colores para la quinceañera:</p>
+    <div>
+      <span class="color-square" style="background: #5a86ad;"></span><small>Dusty Blue</small>
+      <span class="color-square" style="background: #2b6fb3;"></span><small>Azul marino</small>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECCIÓN: Confirmar asistencia -->
+<section class="text-center py-4 px-3" style="background-color: #e6eef6; color: black;">
+  <p style="font-family: 'Merriweather', serif; font-size: 18px; margin-bottom: 20px;">
+    Favor de Confirmar Asistencia Antes Del:
+  </p>
+
+
+  <p style="font-family: 'Merriweather', serif; font-size: 30px; font-weight: bold; margin-bottom: 4px;   color: var(--azul-oscuro);">
+   14 de Noviembre
+  </p>
+
+
+</section>
+
+  <!-- CONFIRMACIÓN -->
+<section class="py-5" style="background-color: #98adc0; font-family: Arial, sans-serif;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-6">
+
+        <h3 class="text-center mb-4" style="font-family: 'Dancing Script', cursive; font-size: 42px; color: black;">
+          Confirmación de Asistencia
+        </h3>
+
+        <form id="confirmationForm" class="d-flex flex-column gap-3">
+
+          <label class="d-flex flex-column fw-semibold text-black">
+            Tu nombre:
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required
+              class="form-control mx-auto" style="max-width: 100%;">
+          </label>
+
+          <label class="d-flex flex-column fw-semibold text-black">
+            ¿Asistirás?
+            <select id="asistencia" name="asistencia" required
+              class="form-select mx-auto" style="max-width: 100%;">
+              <option value="" disabled selected>Selecciona una opción</option>
+              <option value="¡Sí, por supuesto!">Sí, por supuesto</option>
+              <option value="Lo siento, no podré asistir">No, lo siento</option>
+            </select>
+          </label>
+
+          <label class="d-flex flex-column fw-semibold text-black">
+            ¿Cuántas personas asistirán? (incluyéndote)
+              <input type="number" id="cantidad" name="cantidad" min="1" required class="form-control mx-auto" style="max-width: 100%;">
+          </label>
+
+          <label class="d-flex flex-column fw-semibold text-black">
+            Comentarios y felicitaciones:
+          </label>
+          <textarea id="comentarios" name="comentarios" rows="3" placeholder="Escribe aquí tu mensaje..."
+            class="form-control mx-auto" style="max-width: 100%; resize: vertical;"></textarea>
+
+          <button class="btn btn-success mt-2" type="submit">
+            Enviar Confirmación
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECCIÓN SUGERENCIAS DE REGALOS -->
+<section class="sugerencias-regalos">
+  <h2>Sugerencias de Regalos</h2>
+  <h3>Lluvia de sobres</h3>
+  <div class="imagen-sobre">
+    <img src="Sobre.png" alt="Sobre de regalo">
+  </div>
+  <p>Es la tradición de regalar dinero en efectivo en un sobre el día del evento.</p>
+</section>
+
+
+
+ <!-- PORTADA FINAL -->
+<section class="portada-final" style="background-image: url('CASUAL1.jpg');">
+
+  <div class="mensaje-final">
+    ¡Espero contar con tu asistencia!
+  </div>
+
+  <div class="info-final">
+    <div class="nombre-final">Aylin</div>
+
+    <div class="xv-text-final">
+      <span class="mis">Mis</span>
+      <span class="xv">XV</span>
+      <span class="años">Años</span>
+    </div>
+
+    <div class="fecha-final">29 de Noviembre</div>
+  </div>
+
+</section>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <script>
+  window.addEventListener('load', () => {
+    window.scrollTo({
+      top: 0,      
+      left: 0,    
+      behavior: 'auto' 
+    });
+  });
+</script>
+
+
+  <!-- Reproducir audio -->
+  <script>
+  (function(){
+    const audio = document.getElementById('bgAudio');
+    const toggle = document.getElementById('audioToggle');
+    const icon = document.getElementById('audioIcon');
+    let isPlaying = false;
+
+    toggle.addEventListener('click', async () => {
+      if (!isPlaying) {
+        try {
+          await audio.play();
+          isPlaying = true;
+          icon.textContent = '❚❚';
+        } catch (err) {
+          console.warn('Error al reproducir:', err);
+        }
+      } else {
+        audio.pause();
+        isPlaying = false;
+        icon.textContent = '►';
+      }
+    });
+
+    audio.addEventListener('ended', () => {
+      isPlaying = false;
+      icon.textContent = '►';
+    });
+  })();
+  </script>
+
+
+<script>
+  function getCountdownTargetDate() {
+    // 29 Nov 2025 19:00 CDMX (GMT-6)
+    return new Date(Date.UTC(2025, 10, 30, 1, 0, 0));
+  }
+
+  function updateCountdown() {
+    const now = new Date();
+    const target = getCountdownTargetDate();
+    const diff = target - now;
+
+    if (diff <= 0) {
+      clearInterval(intervalId);
+      document.getElementById('countdown').innerHTML = '<div style="font-size: 24px; color: #2f557b;">¡La fiesta ha comenzado!</div>';
+      return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+    const seconds = Math.floor((diff / 1000) % 60);
+
+    document.getElementById('days').textContent = days.toString().padStart(2, '0');
+    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+  }
+
+  updateCountdown();
+  const intervalId = setInterval(updateCountdown, 1000);
+</script>
+
+
+
+<script>
+const imagenes = document.querySelectorAll('.galeria.collage img');
+const lightbox = document.getElementById('lightbox');
+const imgAmpliada = document.getElementById('img-ampliada');
+const cerrar = document.querySelector('.cerrar');
+
+imagenes.forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    imgAmpliada.src = img.src;
+  });
+});
+
+cerrar.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+lightbox.addEventListener('click', (e) => {
+  if(e.target !== imgAmpliada) {
+    lightbox.style.display = 'none';
+  }
+});
+</script>
+
+
+
+<script>
+  //ESTE SCRIPT ES PARA PODER EDITAR LA CANTIDAD DE PERSONAS
+  function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+
+  // Obtener el límite desde la URL (max)
+  const maxInvitados = getQueryParam('max');
+  const nombrePrellenado = getQueryParam('nombre');
+
+  // Si hay un max, aplicarlo al input
+  if (maxInvitados) {
+    const cantidadInput = document.getElementById('cantidad');
+    cantidadInput.max = maxInvitados;
+    cantidadInput.value = 1; 
+  }
+
+  if (nombrePrellenado) {
+    document.getElementById('nombre').value = decodeURIComponent(nombrePrellenado);
+  }
+</script>
+
+
+<script>
+  //ESTE SCRIPT ES PARA MANDAR EL MENSAJE POR WHATSAPP
+  document.getElementById('confirmationForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombre').value.trim();
+    const asistencia = document.getElementById('asistencia').value;
+    const cantidad = document.getElementById('cantidad').value;
+    const comentarios = document.getElementById('comentarios').value.trim();
+
+    if (!nombre || !asistencia || !cantidad) {
+      alert('Por favor, completa todos los campos requeridos.');
+      return;
+    }
+
+    const mensajeBase = `¡Hola! Enviamos nuestra confirmación de asistencia para los XV de Aylin.\n\n` +
+                        `Nombre: ${nombre}\n` +
+                        `¿Asistirás?: ${asistencia}\n` +
+                        `Cantidad de personas: ${cantidad}`;
+
+    const mensajeFinal = comentarios ? `${mensajeBase}\nComentarios: ${comentarios}` : mensajeBase;
+
+    const mensajeCodificado = encodeURIComponent(mensajeFinal);
+
+    const numeroWhatsapp = '528127254111';
+
+    const urlWhatsapp = `https://wa.me/${numeroWhatsapp}?text=${mensajeCodificado}`;
+
+    window.open(urlWhatsapp, '_blank');
+  });
+</script>
+
+<script>
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    document.body.classList.remove('loading');
+    preloader.style.opacity = '0';
+    preloader.style.visibility = 'hidden';
+    setTimeout(() => preloader.remove(), 600);
+  });
+
+  document.body.classList.add('loading');
+</script>
+
+
+<script>
+// --- PRELOADER ---
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+
+  const hero = document.querySelector('.hero');
+  if (hero) {
+    hero.style.animationDelay = "0.3s";
+  }
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); 
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('section').forEach(section => {
+  observer.observe(section);
+});
+</script>
+
+
+
+</body>
+</html>
