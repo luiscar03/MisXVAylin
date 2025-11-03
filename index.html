@@ -725,7 +725,7 @@ html {
     </button>
 
     <audio id="bgAudio" preload="auto">
-      <source src="LATIN MAFIA - pero me estoy acabando. (Visualizer).mp3" type="audio/mpeg">
+      <source src="Frank Ocean - Pink  White.mp3" type="audio/mpeg">
       Tu navegador no soporta audio.
     </audio>
   </div>
@@ -914,10 +914,13 @@ Con el corazón lleno de ilusión, quiero agradecer a Dios por bendecirme con es
             </select>
           </label>
 
-          <label class="d-flex flex-column fw-semibold text-black">
-            ¿Cuántas personas asistirán? (incluyéndote)
-              <input type="number" id="cantidad" name="cantidad" min="1" required class="form-control mx-auto" style="max-width: 100%;">
-          </label>
+         <label class="d-flex flex-column fw-semibold text-black">
+  ¿Cuántas personas asistirán? (incluyéndote)
+  <select id="cantidad" name="cantidad" required class="form-select mx-auto" style="max-width: 100%;">
+    <option value="" disabled selected>Selecciona la cantidad</option>
+  </select>
+</label>
+
 
           <label class="d-flex flex-column fw-semibold text-black">
             Comentarios y felicitaciones:
@@ -1086,21 +1089,26 @@ lightbox.addEventListener('click', (e) => {
     return urlParams.get(param);
   }
 
-  // Obtener el límite desde la URL (max)
   const maxInvitados = getQueryParam('max');
   const nombrePrellenado = getQueryParam('nombre');
 
-  // Si hay un max, aplicarlo al input
   if (maxInvitados) {
-    const cantidadInput = document.getElementById('cantidad');
-    cantidadInput.max = maxInvitados;
-    cantidadInput.value = 1; 
+    const cantidadSelect = document.getElementById('cantidad');
+    const max = parseInt(maxInvitados);
+
+    for (let i = 1; i <= max; i++) {
+      let option = document.createElement("option");
+      option.value = i;
+      option.textContent = i;
+      cantidadSelect.appendChild(option);
+    }
   }
 
   if (nombrePrellenado) {
     document.getElementById('nombre').value = decodeURIComponent(nombrePrellenado);
   }
 </script>
+
 
 
 <script>
